@@ -80,3 +80,58 @@
     width: 60%;
   }
 }
+
+@media (max-width: 900px){
+  .edu-card{
+    width: 22em;
+    height: 6em;
+  }
+
+  .work-card{
+    width: 85%;
+    height: 13em;
+  }
+}
+
+@media (max-width: 800px){
+  .section-heading{
+    width: 10em;
+  }
+
+  .edu-card{
+    width: 20em;
+    height: 7em;
+  }
+
+  .work-card{
+    width: 95%;
+    height: 15em;
+  }
+}
+
+@media (max-width: 700px){
+  .edu-card{
+    width: 17em;
+    height: 8em;
+  }
+
+  .work-card{
+    width: 80%;
+    height: 21.5em;
+  }
+}
+
+@media (max-width: 650px){
+  .edu-card{
+    width: 65%;
+    height: 6em;
+    align-self: center;
+  }
+
+  .work-card{
+    width: 80%;
+    height: 12em;
+    align-self: center;
+  }
+
+}

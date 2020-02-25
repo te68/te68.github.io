@@ -16,9 +16,9 @@ a:hover{
 }
 
 nav{
-  position: sticky;
-  float: right;
-  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   margin-right: 3em;
   margin-bottom: 3em;
   z-index: 1000;
@@ -57,4 +57,35 @@ section{
     left: 20em;
     width: 60%;
   }
+}
+
+@media (max-width: 800px){
+  section{
+    width: 47%;
+  }
+}
+
+@media (max-width: 650px){
+  nav{
+    justify-content: center;
+    margin: 0em;
+  }
+
+  section{
+    position: static;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #education-heading{
+    padding-top: 0em;
+    margin-top: 1em;
+  }
+
+  .section-heading{
+    align-self: center;
+    text-align: center;
+  }
+
 }
