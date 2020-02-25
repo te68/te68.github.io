@@ -1,5 +1,94 @@
 body{
   background-color: #edecec;
-  font-family: PTSansPro;
+  /* font-family: PTSansPro; */
+  font-family: Raleway;
   margin: 0em;
+}
+
+a{
+  color: #669fc3;
+  text-decoration: none;
+}
+
+p{
+  margin: 0em;
+  padding: 0em;
+}
+
+a:hover{
+  font-weight: bold;
+  color: #669fc3;
+}
+
+nav{
+  position: sticky;
+  float: right;
+  margin-top: 3em;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  z-index: 1000;
+}
+
+nav a{
+  color: black;
+  font-weight: 400;
+  padding: .5em;
+  font-size: 1.5em;
+}
+
+#experience-heading{
+  padding-top: 4.7em;
+}
+
+.section-heading{
+  white-space: nowrap;
+  margin: 0em;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+}
+
+section{
+  width: 60%;
+  position: relative;
+  left: 28em;
+}
+
+.work-card{
+  background-color: white;
+  height: 10em;
+  border-radius: 15px;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.work-card img{
+  position: absolute;
+  border-radius: 15px;
+}
+
+.work-heading{
+  margin-left: 3.6em;
+  padding-top: .5em;
+  font-size: 1.3em;
+}
+
+.work-sub-heading{
+  margin-left: 6em;
+  font-size: .8em;
+  padding-top: .7em;
+  padding-bottom: .7em;
+}
+
+.work-description{
+  margin-left: 6em;
+  font-size: .8em;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 1200px){
+  section{
+    left: 20em;
+    width: 60%;
+  }
 }
