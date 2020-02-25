@@ -21,6 +21,13 @@
 #side-bar h1{
   margin-bottom: .5em;
 }
+
+#side-bar a{
+  color: #669fc3;
+  text-decoration: none;
+}
+
+
 #bio{
   text-align: left;
   margin-top: 1em;

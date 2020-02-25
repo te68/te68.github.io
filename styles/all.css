@@ -5,11 +5,6 @@ body{
   margin: 0em;
 }
 
-a{
-  color: #669fc3;
-  text-decoration: none;
-}
-
 p{
   margin: 0em;
   padding: 0em;
@@ -30,20 +25,24 @@ nav{
 }
 
 nav a{
+  text-decoration: none;
   color: black;
   font-weight: 400;
   padding: .5em;
   font-size: 1.5em;
+  text-shadow: 1px 1px 2px grey;
 }
 
-#experience-heading{
+#education-heading{
   padding-top: 4.7em;
 }
 
 .section-heading{
+  text-shadow: 1px 1px 2px grey;
   white-space: nowrap;
   margin: 0em;
   font-size: 1.5em;
+  font-weight: 400;
   padding-bottom: 1em;
 }
 
@@ -52,39 +51,6 @@ section{
   position: relative;
   left: 28em;
 }
-
-.work-card{
-  background-color: white;
-  height: 10em;
-  border-radius: 15px;
-  padding: 1em;
-  margin-bottom: 2em;
-}
-
-.work-card img{
-  position: absolute;
-  border-radius: 15px;
-}
-
-.work-heading{
-  margin-left: 3.6em;
-  padding-top: .5em;
-  font-size: 1.3em;
-}
-
-.work-sub-heading{
-  margin-left: 6em;
-  font-size: .8em;
-  padding-top: .7em;
-  padding-bottom: .7em;
-}
-
-.work-description{
-  margin-left: 6em;
-  font-size: .8em;
-  line-height: 1.6;
-}
-
 
 @media (max-width: 1200px){
   section{

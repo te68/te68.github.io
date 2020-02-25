@@ -1,0 +1,82 @@
+.work-card{
+  background-color: white;
+  height: 10em;
+  border-radius: 15px;
+  padding: 1em;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.work-card img{
+  position: absolute;
+  border-radius: 15px;
+}
+
+.work-card a{
+  text-decoration: none;
+  color: black;
+}
+
+.work-heading{
+  margin-left: 3.6em;
+  padding-top: .5em;
+  font-size: 1.3em;
+}
+
+.work-sub-heading{
+  margin-left: 6em;
+  font-size: .8em;
+  padding-top: .7em;
+  padding-bottom: .7em;
+}
+
+.work-description{
+  margin-left: 6em;
+  font-size: .8em;
+  line-height: 1.6;
+}
+
+.edu-card{
+  width: 50%;
+  background-color: white;
+  height: 5em;
+  border-radius: 15px;
+  padding: 1em;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.edu-card img{
+  margin-top: .65em;
+  position: absolute;
+  border-radius: 15px;
+}
+
+.edu-card a{
+  text-decoration: none;
+  color: black;
+}
+.edu-heading{
+  margin-left: 3.6em;
+  padding-top: .3em;
+  font-size: 1.3em;
+}
+
+.edu-sub-heading{
+  margin-left: 6em;
+  font-size: .8em;
+  padding-top: .5em;
+  padding-bottom: .7em;
+}
+
+.edu-description{
+  margin-left: 6em;
+  font-size: .8em;
+  line-height: 1.6;
+}
+
+@media (max-width: 1200px){
+  .edu-card{
+    width: 60%;
+  }
+}
