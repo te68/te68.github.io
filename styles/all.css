@@ -20,7 +20,8 @@ nav{
   flex-direction: row;
   justify-content: flex-end;
   margin-right: 3em;
-  margin-bottom: 3em;
+  padding-top: 2em;
+  margin-bottom: 1em;
   z-index: 1000;
 }
 
@@ -30,15 +31,11 @@ nav a{
   font-weight: 400;
   padding: .5em;
   font-size: 1.5em;
-  text-shadow: 1px 1px 2px grey;
-}
-
-#education-heading{
-  padding-top: 4.7em;
+  text-shadow: .5px .5px 1px grey;
 }
 
 .section-heading{
-  text-shadow: 1px 1px 2px grey;
+  text-shadow: .5px .5px 1px grey;
   white-space: nowrap;
   margin: 0em;
   font-size: 1.5em;
@@ -50,6 +47,12 @@ section{
   width: 60%;
   position: relative;
   left: 28em;
+}
+
+#project-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1200px){

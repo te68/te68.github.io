@@ -75,6 +75,40 @@
   line-height: 1.6;
 }
 
+.project-title{
+  text-align: center;
+  text-shadow: .5px .5px 1px grey;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+
+.project-card{
+  height: 16em;
+  width: 16em;
+  border-radius: 15px;
+  padding: 1em;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 2em;
+}
+
+#scrabble-card{
+  background-image: url("../images/scrabble-icon.png");
+}
+
+#wine-card{
+  background-image: url("../images/wine-icon.png");
+}
+
+#CUSail-card{
+  background-image: url("../images/cusail-big.png");
+}
+
+#creatives-card{
+  background-image: url("../images/cc-logo-big.png");
+}
+
 @media (max-width: 1200px){
   .edu-card{
     width: 60%;
@@ -122,15 +156,16 @@
 }
 
 @media (max-width: 650px){
+
   .edu-card{
-    width: 65%;
-    height: 6em;
+    width: 70%;
+    height: 8em;
     align-self: center;
   }
 
   .work-card{
     width: 80%;
-    height: 12em;
+    height: 17em;
     align-self: center;
   }
 
