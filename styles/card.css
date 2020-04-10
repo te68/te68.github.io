@@ -82,6 +82,16 @@
   font-weight: 400;
 }
 
+#project-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project-card-container{
+  height: 24em;
+}
+
 
 .project-card{
   height: 16em;
@@ -94,17 +104,40 @@
   text-align: center;
 }
 
-.project-card a{
+.project-card-info{
+  border-radius: 15px;
+  padding: 1em;
+  height: 16em;
+  width: 16em;
+  text-align: center;
+  position: relative;
+  bottom: 19.1em;
+  left: 1.2em;
+}
+
+.project-card-description{
+  background-color: white;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: .8em;
+  padding: .5em;
+  font-size: .9em;
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+
+.project-card-info a{
   text-decoration: none;
   color: black;
-  font-size: 1.5em;
+  font-size: 1.3em;
   background-color: white;
   border-style: solid;
   border-width: 1px;
   border-color: black;
   border-radius: .8em;
-  position: relative;
-  top: 8em;
+  margin-top: 2em;
   padding: 8px 16px;
 }
 
@@ -124,11 +157,11 @@
   background-image: url("../images/wine-icon.png");
 }
 
-#CUSail-card{
+#cusail-card{
   background-image: url("../images/cusail-big.png");
 }
 
-#creatives-card{
+#cc-card{
   background-image: url("../images/cc-logo-big.png");
 }
 
@@ -189,6 +222,15 @@
   .work-card{
     width: 80%;
     height: 17em;
+    align-self: center;
+  }
+
+  #project-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-card-container{
     align-self: center;
   }
 

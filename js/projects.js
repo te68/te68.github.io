@@ -1,12 +1,65 @@
-const projectCards = Array.from(document.getElementsByClassName("project-card"))
+const scrabbleInfo = document.getElementById("scrabble-info")
+const scrabbleCard = document.getElementById("scrabble-card")
 const scrabbleLink = document.getElementById("scrabble-github-link")
-projectCards.forEach((card) => {
-    card.addEventListener('mouseover', (event) =>{
-      event.target.classList.remove('blur')
-      scrabbleLink.classList.remove('hidden')
-    })
-    card.addEventListener('mouseleave', (event) =>{
-      event.target.classList.add('blur')
-      scrabbleLink.classList.add('hidden')
-    })
-});
+const scrabbleDesc = document.getElementById("scrabble-description")
+scrabbleInfo.addEventListener('mouseover', (event) =>{
+  scrabbleCard.classList.add('blur')
+  scrabbleLink.classList.remove('hidden')
+  scrabbleDesc.classList.remove('hidden')
+})
+scrabbleInfo.addEventListener('mouseleave', (event) =>{
+  scrabbleCard.classList.remove('blur')
+  scrabbleLink.classList.add('hidden')
+  scrabbleDesc.classList.add('hidden')
+})
+
+const wineInfo = document.getElementById("wine-info")
+const wineCard = document.getElementById("wine-card")
+const wineLink = document.getElementById("wine-github-link")
+const wineDesc = document.getElementById("wine-description")
+wineInfo.addEventListener('mouseover', (event) =>{
+  wineCard.classList.add('blur')
+  wineLink.classList.remove('hidden')
+  wineDesc.classList.remove('hidden')
+})
+wineInfo.addEventListener('mouseleave', (event) =>{
+  wineCard.classList.remove('blur')
+  wineLink.classList.add('hidden')
+  wineDesc.classList.add('hidden')
+})
+
+const cusailInfo = document.getElementById("cusail-info")
+const cusailCard = document.getElementById("cusail-card")
+const cusailLink = document.getElementById("cusail-github-link")
+const cusailLiveLink = document.getElementById("cusail-live-link")
+const cusailDesc = document.getElementById("cusail-description")
+cusailInfo.addEventListener('mouseover', (event) =>{
+  cusailCard.classList.add('blur')
+  cusailLink.classList.remove('hidden')
+  cusailLiveLink.classList.remove('hidden')
+  cusailDesc.classList.remove('hidden')
+})
+cusailInfo.addEventListener('mouseleave', (event) =>{
+  cusailCard.classList.remove('blur')
+  cusailLink.classList.add('hidden')
+  cusailLiveLink.classList.add('hidden')
+  cusailDesc.classList.add('hidden')
+})
+
+const ccInfo = document.getElementById("cc-info")
+const ccCard = document.getElementById("cc-card")
+const ccLink = document.getElementById("cc-github-link")
+const ccLiveLink = document.getElementById("cc-live-link")
+const ccDesc = document.getElementById("cc-description")
+ccInfo.addEventListener('mouseover', (event) =>{
+  ccCard.classList.add('blur')
+  ccLink.classList.remove('hidden')
+  ccLiveLink.classList.remove('hidden')
+  ccDesc.classList.remove('hidden')
+})
+ccInfo.addEventListener('mouseleave', (event) =>{
+  ccCard.classList.remove('blur')
+  ccLink.classList.add('hidden')
+  ccLiveLink.classList.add('hidden')
+  ccDesc.classList.add('hidden')
+})

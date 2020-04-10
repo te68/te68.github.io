@@ -49,10 +49,8 @@ section{
   left: 28em;
 }
 
-#project-container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+#mobile-projects-description{
+  display: none;
 }
 
 @media (max-width: 1200px){
@@ -86,9 +84,26 @@ section{
     margin-top: 1em;
   }
 
+  #projects-heading{
+    margin-top: 1em;
+    padding-bottom: .5em;
+  }
+
   .section-heading{
     align-self: center;
     text-align: center;
   }
+
+  #mobile-projects-description{
+    display: block;
+    align-self: center;
+    text-shadow: .5px .5px 1px grey;
+    white-space: nowrap;
+    margin: 0em;
+    padding: 0em;
+    font-size: 1em;
+    font-weight: 400;
+  }
+
 
 }
