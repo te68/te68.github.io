@@ -89,6 +89,10 @@ section{
     padding-bottom: .5em;
   }
 
+  #photography-heading{
+    margin-top: 1em;
+  }
+
   .section-heading{
     align-self: center;
     text-align: center;
