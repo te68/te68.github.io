@@ -15,6 +15,10 @@ a:hover{
   color: #669fc3;
 }
 
+a{
+  text-decoration: none;
+}
+
 nav{
   display: flex;
   flex-direction: row;
@@ -44,7 +48,7 @@ nav a{
 }
 
 section{
-  width: 60%;
+  width: 65%;
   position: relative;
   left: 28em;
 }
