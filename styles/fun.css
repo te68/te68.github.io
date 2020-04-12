@@ -267,24 +267,4 @@
   color: #669fc3;
 }
 
-#album-container img{
-  width: 12em;
-}
-
-.flip-card {
-  width: 12em;
-  height: 12em;
-}
-
-.flip-card-back {
-  height: 10em;
-}
-
-.album-heading{
-  margin-top: 0em;
-  font-size: 1.1em;
-}
-
-
-
 }

@@ -79,7 +79,6 @@ tnf = document.getElementById('tnf')
 
 window.addEventListener('scroll', (event) => {
   let y = window.scrollY
-  console.log(y)
   if (y > 300 && y < 1000){
     hoodieszn.classList.remove('card-hidden')
     hoodieszn.classList.add('fade-in')
