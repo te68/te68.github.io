@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="./styles/sidebar.css">
   <link rel="stylesheet" href="./styles/card.css">
   <link rel="stylesheet" href="./styles/all.css">
+  <link rel="stylesheet" href="./styles/animation.css">
+  <script defer type="text/javascript" src="./js/index.js">
+  </script>
 </head>
 
 <body>
@@ -14,10 +17,20 @@
     <img src="./images/profile-pic.jpg" alt="profile picture" id="profile-pic">
     <h1>Tomas Engquist</h1>
     <p>Cornell University Class of 2022<p>
-    <p>
-      <a target="_blank" href="mailto:te68@cornell.edu">te68@cornell.edu</a>
-      <span>|</span>
-      <a target="_blank" href="https://www.linkedin.com/in/tomas-engquist-267837173/">LinkedIn</a></p>
+      <p id="icon-container">
+        <a target="_blank" href="mailto:te68@cornell.edu">
+          <img class="media-icon" src="./images/gmail.svg" alt="Gmail Logo">
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/tomas-engquist-267837173/">
+          <img class="media-icon" src="./images/linkedin.svg" alt="LinkedIn Logo">
+        </a>
+        <a target="_blank" href="https://github.com/te68">
+          <img class="media-icon" src="./images/github.svg" alt="GitHub Logo">
+        </a>
+        <a target="_blank" href="https://medium.com/@te68">
+          <img class="media-icon" src="./images/medium.svg" alt="Medium Logo">
+        </a>
+      </p>
     <p id="bio">I'm a sophomore at Cornell studying information science in the College of Arts Sciences. I concentrate on web design and development and I currently work as a front-end developer. I live in Park Slope, Brooklyn and I love reading about technology, listening to hip-hop, taking photos, and talking about sustainability. </p>
   </div>
 
@@ -30,19 +43,19 @@
 
   <section>
     <h1 class="section-heading" id="education-heading">Education</h1>
-    <div class="edu-card">
+    <div id="cornell-card" class="edu-card slide-left card-hidden">
         <a target="_blank" href="https://www.cornell.edu/about/">  <img src="./images/cornell-logo.png" alt="Cornell University"></a>
         <p class="edu-heading"><a target="_blank" href="https://www.cornell.edu/about/">Cornell University</a></p>
         <p class="edu-sub-heading">Ithaca, NY | Aug 2018 – Present </p>
         <p class="edu-description"> Information Science</p>
     </div>
-    <div class="edu-card">
+    <div id="flatiron-card" class="edu-card slide-left card-hidden">
         <a target="_blank" href="https://flatironschool.com/?utm_source=Google&utm_medium=ppc&utm_campaign=1783325438&utm_content=75897432663&utm_term=flatiron%20school&uqaid=378105342375&Cj0KCQiAqNPyBRCjARIsAKA-WFxiuPXSv5pEQktsU4LaSCsoZzgU7fd1Uwa0iCTBIxf2odk81PzdxTUaArJFEALw_wcB&gclid=Cj0KCQiAqNPyBRCjARIsAKA-WFxiuPXSv5pEQktsU4LaSCsoZzgU7fd1Uwa0iCTBIxf2odk81PzdxTUaArJFEALw_wcB">      <img src="./images/flatiron-logo.png" alt="Flatiron School"></a>
         <p class="edu-heading"><a target="_blank" href="https://flatironschool.com/?utm_source=Google&utm_medium=ppc&utm_campaign=1783325438&utm_content=75897432663&utm_term=flatiron%20school&uqaid=378105342375&Cj0KCQiAqNPyBRCjARIsAKA-WFxiuPXSv5pEQktsU4LaSCsoZzgU7fd1Uwa0iCTBIxf2odk81PzdxTUaArJFEALw_wcB&gclid=Cj0KCQiAqNPyBRCjARIsAKA-WFxiuPXSv5pEQktsU4LaSCsoZzgU7fd1Uwa0iCTBIxf2odk81PzdxTUaArJFEALw_wcB">Flatiron School</a></p>
         <p class="edu-sub-heading">New York City, NY | Jun 2019 – Aug 2019 </p>
         <p class="edu-description"> Fullstack Development </p>
     </div>
-    <div class="edu-card">
+    <div id="stuy-card" class="edu-card slide-left card-hidden">
         <a target="_blank" href="https://stuy.enschool.org/">  <img src="./images/stuy-logo.png" alt="Stuyvesant High School"></a>
         <p class="edu-heading"><a target="_blank" href="https://stuy.enschool.org/">Stuyvesant High School</a></p>
         <p class="edu-sub-heading">New York City, NY | Sep 2014 – Jun 2018 </p>
@@ -51,21 +64,28 @@
   </section>
   <section>
   <h1 class="section-heading">Relevant Experience</h1>
-  <div class="work-card">
+  <div id="hopscotch-card" class="work-card card-hidden">
+      <img src="./images/hopscotch-logo.png" alt="Hopscotch Corp.">
+      <p class="work-heading"> Web Development Intern @ Hopscotch Corp<p>
+      <p class="work-sub-heading"> New York, NY | March 2020 – Present </p>
+      <p class="work-description"> I am currently training in Go, React with Redux, SQL, PostgreSQL, and database design. I will be ultilizing ReactJS, HTML, and CSS to program the central product, a tailored child development service.
+</p>
+  </div>
+  <div id="creatives-card" class="work-card card-hidden">
       <a target="_blank" href="http://cornellcreatives.com/">  <img src="./images/cc-logo.png" alt="Cornell Creatives"></a>
       <p class="work-heading"> Front-end Developer @
         <a target="_blank" href="http://cornellcreatives.com/"> Cornell Creatives </a><p>
       <p class="work-sub-heading"> Ithaca, NY | Feb 2020 – Present </p>
       <p class="work-description"> I expand the website for Cornell Creatives, an agency and platform that empowers creatives to pursue hobbies they love. I work with a team of four developers using HTML, CSS, and JavaScript to update and develop the organization's website.</p>
   </div>
-  <div class="work-card">
+  <div id="cusailwork-card" class="work-card card-hidden">
     <a target="_blank" href="https://cusail.engineering.cornell.edu/">    <img src="./images/cusail-logo.png" alt="CUSail"></a>
       <p class="work-heading"> Front-end Developer @
         <a target="_blank" href="https://cusail.engineering.cornell.edu/">CUSail</a><p>
       <p class="work-sub-heading"> Ithaca, NY | Sep 2019 – Present </p>
       <p class="work-description"> I develop the web site using JavaScript, HTML, and CSS for the Cornell Autonomous Sailboat Team, an engineering project team that designs an autonomous sailboat. I also help coordinate logistics such as marketing, outreach, recruitment, and social events. </p>
   </div>
-  <div class="work-card">
+  <div id="codingschool-card" class="work-card card-hidden">
     <a target="_blank" href="https://www.the-cs.org/"> <img src="./images/coding-school-logo.png" alt="The Coding School"></a>
       <p class="work-heading"> Python Instructor @
         <a target="_blank" href="https://www.the-cs.org/">The Coding School</a><p>
@@ -73,7 +93,7 @@
       <p class="work-description">  Tutored a middle school student in the fundamentals of Python including functions, loops, conditionals, and object-oriented programming. Collaborated with the curriculum team to provide feedback on students and improve course material.
  </p>
   </div>
-  <div class="work-card">
+  <div id="realdeal-card" class="work-card card-hidden">
       <a target="_blank" href="https://therealdeal.com/"> <img src="./images/trd-logo.jpeg" alt="The Real Deal"></a>
       <p class="work-heading"> Web Design Intern @
         <a target="_blank" href="https://therealdeal.com/">The Real Deal</a><p>
@@ -83,14 +103,21 @@
 </section>
   <section>
     <h1 class="section-heading">Additional Experience</h1>
-    <div class="work-card">
-        <a target="_blank" href="https://www.acquisconsulting.com/"><img src="./images/acquis-logo.png" alt="Acquis Conslting Group"></a>
+    <div id="eco-card" class="work-card card-hidden">
+        <a target="_blank" href="https://www.acquisconsulting.com/"><img id="eco-logo" src="./images/eco.png" alt="ECO Logo"></a>
+        <p class="work-heading"> President @
+          <a target="_blank" href="https://www.acquisconsulting.com/">Cornell Environmental Collaborative</a><p>
+        <p class="work-sub-heading">Ithaca, NY | Jan 2019 – Present </p>
+        <p class="work-description"> I direct and oversee the Cornell Environmental Collaborative, an organiztion that represents the sustainability community on campus. I work on all aspects of the club including event planning, recruitment, public relations, and internal restructuring.  </p>
+    </div>
+    <div id="acquis-card" class="work-card card-hidden">
+        <a target="_blank" href="https://cornelleco.org/"><img src="./images/acquis-logo.png" alt="Acquis Conslting Group"></a>
         <p class="work-heading"> Intern @
-          <a target="_blank" href="https://www.acquisconsulting.com/">Acquis Consulting Group</a><p>
+          <a target="_blank" href="https://cornelleco.org/">Acquis Consulting Group</a><p>
         <p class="work-sub-heading">New York City, NY | Dec 2018 – Jan 2019 </p>
         <p class="work-description"> I worked on the training team, preparing content on the LMS Docebo. I created a dashboard on Excel of key performance indicators, edited and debugged online courses, attended weekly meetings, and organized conference calls with Acquis staff. </p>
     </div>
-    <div class="work-card">
+    <div id="usta-card" class="work-card card-hidden">
         <a target="_blank" href="https://www.usta.com/en/home.html">      <img src="./images/usta-logo.png" alt="USTA"></a>
         <p class="work-heading"> Ballperson @
           <a target="_blank" href="https://www.usta.com/en/home.html">USTA</a><p>

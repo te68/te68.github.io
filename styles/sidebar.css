@@ -28,12 +28,26 @@
   text-decoration: none;
 }
 
+#icon-container{
+  margin-top: .8em;
+}
+
+.media-icon{
+  width: 1.5em;
+  margin-right: .3em;
+  margin-left: .3em;
+}
+
+.media-icon:hover{
+  width: 2em;
+}
 
 
 #bio{
   padding: 1em;
+  padding-top: 0em;
   text-align: left;
-  margin-top: 1em;
+  margin-top: .8em;
   margin-left: .5em;
 }
 
@@ -52,13 +66,13 @@
   }
 
   #side-bar p{
-    margin-bottom: .5em;
     font-size: .9em;
   }
 
 
   #bio{
     padding: 1em;
+    padding-top: 0em;
     padding-bottom: 0em;
     text-align: left;
     margin-left: .5em;

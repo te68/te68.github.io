@@ -13,6 +13,21 @@ scrabbleInfo.addEventListener('mouseleave', (event) =>{
   scrabbleDesc.classList.add('hidden')
 })
 
+const gifInfo = document.getElementById("gif-info")
+const gifCard = document.getElementById("gif-card")
+const gifLink = document.getElementById("gif-github-link")
+const gifDesc = document.getElementById("gif-description")
+gifInfo.addEventListener('mouseover', (event) =>{
+  gifCard.classList.add('blur')
+  gifLink.classList.remove('hidden')
+  gifDesc.classList.remove('hidden')
+})
+gifInfo.addEventListener('mouseleave', (event) =>{
+  gifCard.classList.remove('blur')
+  gifLink.classList.add('hidden')
+  gifDesc.classList.add('hidden')
+})
+
 const wineInfo = document.getElementById("wine-info")
 const wineCard = document.getElementById("wine-card")
 const wineLink = document.getElementById("wine-github-link")

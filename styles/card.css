@@ -37,6 +37,10 @@
   line-height: 1.6;
 }
 
+#eco-logo{
+  margin-top: 1em;
+}
+
 .edu-card{
   width: 50%;
   background-color: white;
@@ -154,6 +158,10 @@
   background-image: url("../images/scrabble-icon.png");
 }
 
+#gif-card{
+  background-image: url("../images/giphy-logo.png");
+}
+
 #wine-card{
   background-image: url("../images/wine-icon.png");
 }
@@ -172,7 +180,7 @@
   }
 }
 
-@media (max-width: 900px){
+@media (max-width: 1020px){
   .edu-card{
     width: 22em;
     height: 6em;

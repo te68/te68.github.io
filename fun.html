@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./styles/sidebar.css">
   <link rel="stylesheet" href="./styles/all.css">
   <link rel="stylesheet" href="./styles/fun.css">
+  <link rel="stylesheet" href="./styles/animation.css">
   <script defer src="./js/fun.js"></script>
 </head>
 
@@ -15,10 +16,20 @@
     <img src="./images/profile-pic.jpg" alt="profile picture" id="profile-pic">
     <h1>Tomas Engquist</h1>
     <p>Cornell University Class of 2022<p>
-    <p>
-      <a target="_blank" href="mailto:te68@cornell.edu">te68@cornell.edu</a>
-      <span>|</span>
-      <a target="_blank" href="https://www.linkedin.com/in/tomas-engquist-267837173/">LinkedIn</a></p>
+    <p id="icon-container">
+      <a target="_blank" href="mailto:te68@cornell.edu">
+        <img class="media-icon" src="./images/gmail.svg" alt="Gmail Logo">
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/tomas-engquist-267837173/">
+        <img class="media-icon" src="./images/linkedin.svg" alt="LinkedIn Logo">
+      </a>
+      <a target="_blank" href="https://github.com/te68">
+        <img class="media-icon" src="./images/github.svg" alt="GitHub Logo">
+      </a>
+      <a target="_blank" href="https://medium.com/@te68">
+        <img class="media-icon" src="./images/medium.svg" alt="Medium Logo">
+      </a>
+    </p>
     <p id="bio">I'm a sophomore at Cornell studying information science in the College of Arts Sciences. I concentrate on web design development and I currently work as a front-end developer. I live in Park Slope, Brooklyn and I love reading about technology, listening to hip-hop, taking photos, and talking about sustainability. </p>
   </div>
 
@@ -37,19 +48,19 @@
           <span id="portrait-heading">Portrait</span>
           <span id="landscape-heading">Landscape</span>
       </div>
-      <div class="horizontal-box" id="nature-box">
+      <div class="horizontal-box fade-in" id="nature-box">
         <img src="./images/elephant.jpg" alt="Elephant">
         <img src="./images/gazelle.jpg" alt="Elephant">
         <img src="./images/lizard.jpg" alt="Lizard">
         <img src="./images/giraffe.jpg" alt="Giraffe">
       </div>
-      <div class="hidden vertical-box" id="portrait-box">
+      <div class="hidden vertical-box fade-in" id="portrait-box">
         <img src="./images/george.jpg" alt="Elephant">
         <img src="./images/jenny.jpg" alt="Elephant">
         <img src="./images/micheal.jpg" alt="Lizard">
         <img src="./images/vicki.jpg" alt="Giraffe">
       </div>
-      <div class="hidden horizontal-box" id="landscape-box">
+      <div class="hidden horizontal-box fade-in" id="landscape-box">
         <img src="./images/landscape1.jpg" alt="Landscape">
         <img src="./images/landscape2.jpg" alt="Landscape">
         <img src="./images/landscape3.jpg" alt="Landscape">
@@ -58,7 +69,7 @@
     </div>
     <h1 id="music-heading" class="section-heading">Favorite Music</h1>
     <div id="album-container">
-      <div class="flip-card">
+      <div id="hoodieszn" class="flip-card card-hidden">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="./images/hoodieszn.jpg" alt="Hoodie Szn">
@@ -76,7 +87,7 @@
         </div>
       </div>
 
-      <div class="flip-card">
+      <div id="40dance" class="flip-card card-hidden">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="./images/40dance.jpeg" alt="40 Dance">
@@ -94,7 +105,7 @@
         </div>
       </div>
 
-      <div class="flip-card">
+      <div id="hoodfavorite" class="flip-card card-hidden">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="./images/hoodfavorite.jpg" alt="Hood Favorite">
@@ -112,7 +123,7 @@
         </div>
       </div>
 
-      <div class="flip-card">
+      <div id="mbdtf" class="flip-card card-hidden">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="./images/mbdtf.jpg" alt="My Beautiful Dark Twisted Fantasy">
@@ -130,7 +141,7 @@
         </div>
       </div>
 
-      <div class="flip-card">
+      <div id="808s" class="flip-card card-hidden">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="./images/808.jpg" alt="808s & Heartbreak">
@@ -148,7 +159,7 @@
         </div>
       </div>
 
-      <div class="flip-card">
+      <div id="myturn" class="flip-card card-hidden">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="./images/myturn.png" alt="My Turn">
@@ -166,7 +177,7 @@
         </div>
       </div>
 
-      <div class="flip-card">
+      <div id="truetomyself" class="flip-card card-hidden">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="./images/truetomyself.jpg" alt="True To Myself">
@@ -184,7 +195,7 @@
         </div>
       </div>
 
-      <div class="flip-card">
+      <div id="unluccy" class="flip-card card-hidden">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="./images/unluccy.png" alt="The Unluccy Luccy Kid">
@@ -202,7 +213,7 @@
         </div>
       </div>
 
-      <div class="flip-card">
+      <div id="astroworld" class="flip-card card-hidden">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="./images/astroworld.jpg" alt="Astroworld">
@@ -222,17 +233,27 @@
 
     </div>
 
+    <h1 id="frat-heading" class="section-heading">Fraternity</h1>
+    <div id="frat-photo-container">
+      <img class="card-hidden" id="datenight1" src="./images/datenight1.jpg" alt="Date Night">
+      <img class="card-hidden" id="house" src="./images/house.JPG" alt="Tomas with House">
+      <img class="card-hidden" id="pc" src="./images/pc.jpg" alt="Pledge Class 2019">
+      <img class="card-hidden" id="pc3" src="./images/pc3.JPG" alt="Pledge Class 2019">
+      <img class="card-hidden" id="pc2" src="./images/pc2.JPEG" alt="Pledge Class 2019">
+      <img class="card-hidden" id="datenight2" src="./images/datenight2.jpg" alt="Date Night">
+    </div>
+
     <h1 id="fashion-heading" class="section-heading">Fashion</h1>
     <div id="fashion-photo-container">
-      <img id="coves" src="./images/coves.jpg" alt="Coves">
-      <img id="winter" src="./images/winter.jpg" alt="Winter Outfit">
-      <img id="jackets" src="./images/jackets.jpg" alt="Jacket Outfits">
-      <img id="spring" src="./images/spring.jpg" alt="Spring Outfit">
-      <img id="cleats" src="./images/cleats.jpg" alt="Cleats">
-      <img id="fall" src="./images/fall.png" alt="Fall Outfit">
-      <img id="racers" src="./images/racers.jpg" alt="Racers">
-      <img id="vermont" src="./images/vermont.jpg" alt="Portrait in Vermont">
-      <img id="tnf" src="./images/tnf.jpg" alt="The North Face Jackets">
+      <img class="card-hidden" id="coves" src="./images/coves.jpg" alt="Coves">
+      <img class="card-hidden" id="winter" src="./images/winter.jpg" alt="Winter Outfit">
+      <img class="card-hidden" id="jackets" src="./images/jackets.jpg" alt="Jacket Outfits">
+      <img class="card-hidden" id="spring" src="./images/spring.jpg" alt="Spring Outfit">
+      <img class="card-hidden" id="cleats" src="./images/cleats.jpg" alt="Cleats">
+      <img class="card-hidden" id="fall" src="./images/fall.png" alt="Fall Outfit">
+      <img class="card-hidden" id="racers" src="./images/racers.jpg" alt="Racers">
+      <img class="card-hidden" id="vermont" src="./images/vermont.jpg" alt="Portrait in Vermont">
+      <img class="card-hidden" id="tnf" src="./images/tnf.jpg" alt="The North Face Jackets">
     </div>
   </section>
 

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./styles/sidebar.css">
   <link rel="stylesheet" href="./styles/card.css">
   <link rel="stylesheet" href="./styles/all.css">
+  <link rel="stylesheet" href="./styles/animation.css">
   <script defer src="./js/projects.js"></script>
 </head>
 
@@ -15,10 +16,20 @@
     <img src="./images/profile-pic.jpg" alt="profile picture" id="profile-pic">
     <h1>Tomas Engquist</h1>
     <p>Cornell University Class of 2022<p>
-    <p>
-      <a target="_blank" href="mailto:te68@cornell.edu">te68@cornell.edu</a>
-      <span>|</span>
-      <a target="_blank" href="https://www.linkedin.com/in/tomas-engquist-267837173/">LinkedIn</a></p>
+      <p id="icon-container">
+        <a target="_blank" href="mailto:te68@cornell.edu">
+          <img class="media-icon" src="./images/gmail.svg" alt="Gmail Logo">
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/tomas-engquist-267837173/">
+          <img class="media-icon" src="./images/linkedin.svg" alt="LinkedIn Logo">
+        </a>
+        <a target="_blank" href="https://github.com/te68">
+          <img class="media-icon" src="./images/github.svg" alt="GitHub Logo">
+        </a>
+        <a target="_blank" href="https://medium.com/@te68">
+          <img class="media-icon" src="./images/medium.svg" alt="Medium Logo">
+        </a>
+      </p>
     <p id="bio">I'm a sophomore at Cornell studying information science in the College of Arts Sciences. I concentrate on web design development and I currently work as a front-end developer. I live in Park Slope, Brooklyn and I love reading about technology, listening to hip-hop, taking photos, and talking about sustainability. </p>
   </div>
 
@@ -33,7 +44,7 @@
     <h1 id="projects-heading" class="section-heading">Technical Projects</h1>
     <h2 id="mobile-projects-description">Click on image for details</h2>
     <div id="project-container">
-      <div class="project-card-container">
+      <div class="project-card-container zoom-in">
         <h2 class="project-title">Scrabble</h2>
         <div id="scrabble-card" class="project-card">
         </div>
@@ -44,7 +55,18 @@
             <a class="project-link hidden" id="scrabble-github-link" target="_blank" href="https://github.com/te68/Scrabble">Github</a>
         </div>
       </div>
-      <div class="project-card-container">
+      <div class="project-card-container zoom-in">
+        <h2 class="project-title">Gif Search</h2>
+        <div id="gif-card" class="project-card">
+        </div>
+        <div id="gif-info" class="project-card-info">
+            <div id="gif-description" class="project-card-description hidden">
+                Gif Search is a search engine with hundreds of gifs from the GIPHY api.
+            </div>
+            <a class="project-link hidden" id="gif-github-link" target="_blank" href="https://github.com/te68/marvelChallenge">Github</a>
+        </div>
+      </div>
+      <div class="project-card-container zoom-in">
         <h2 class="project-title">The Wine Room</h2>
         <div id="wine-card" class="project-card">
         </div>
@@ -55,7 +77,7 @@
             <a class="project-link hidden" id="wine-github-link" target="_blank" href="https://github.com/te68/TheWineRoom">Github</a>
         </div>
       </div>
-      <div class="project-card-container">
+      <div class="project-card-container zoom-in">
         <h2 class="project-title">CUSail</h2>
         <div id="cusail-card" class="project-card">
         </div>
@@ -67,7 +89,7 @@
             <a class="project-link hidden" id="cusail-live-link" target="_blank" href="https://cusail.engineering.cornell.edu/">Live Site</a>
         </div>
       </div>
-      <div class="project-card-container">
+      <div class="project-card-container zoom-in">
         <h2 class="project-title">Cornell Creatives</h2>
         <div id="cc-card" class="project-card">
         </div>
