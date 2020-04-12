@@ -261,6 +261,7 @@
   width: 90%;
   margin-left: 0em;
   margin-right: 0em;
+  align-self: center;
 }
 
 .flip-card-back a{
