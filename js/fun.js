@@ -77,72 +77,99 @@ racers = document.getElementById('racers')
 vermont = document.getElementById('vermont')
 tnf = document.getElementById('tnf')
 
-window.addEventListener('scroll', (event) => {
-  let y = window.scrollY
-  if (y > 300 && y < 1000){
-    hoodieszn.classList.remove('card-hidden')
-    hoodieszn.classList.add('fade-in')
-    dance.classList.remove('card-hidden')
-    dance.classList.add('fade-in')
-    hoodfavorite.classList.remove('card-hidden')
-    hoodfavorite.classList.add('fade-in')
-  }
-  if(y > 500 && y < 1200){
-    mbdtf.classList.remove('card-hidden')
-    mbdtf.classList.add('fade-in')
-    heartbreak.classList.remove('card-hidden')
-    heartbreak.classList.add('fade-in')
-    myturn.classList.remove('card-hidden')
-    myturn.classList.add('fade-in')
-  }
-  if(y > 700 && y < 1400){
-    truetomyself.classList.remove('card-hidden')
-    truetomyself.classList.add('fade-in')
-    unluccy.classList.remove('card-hidden')
-    unluccy.classList.add('fade-in')
-    astroworld.classList.remove('card-hidden')
-    astroworld.classList.add('fade-in')
-  }
-  if(y > 1200 && y < 1900){
-    datenight1.classList.remove('card-hidden')
-    datenight1.classList.add('fade-in')
-    house.classList.remove('card-hidden')
-    house.classList.add('fade-in')
-    pc.classList.remove('card-hidden')
-    pc.classList.add('fade-in')
-  }
-  if(y > 1500 && y < 2200){
-    pc3.classList.remove('card-hidden')
-    pc3.classList.add('fade-in')
-    pc2.classList.remove('card-hidden')
-    pc2.classList.add('fade-in')
-    datenight2.classList.remove('card-hidden')
-    datenight2.classList.add('fade-in')
-  }
-  if (y > 1700 && y < 2400){
-    coves.classList.remove('card-hidden')
-    coves.classList.add('fade-in')
-    winter.classList.remove('card-hidden')
-    winter.classList.add('fade-in')
-    jackets.classList.remove('card-hidden')
-    jackets.classList.add('fade-in')
-  }
-  if(y > 2000 && y < 2600){
-    spring.classList.remove('card-hidden')
-    spring.classList.add('fade-in')
-    cleats.classList.remove('card-hidden')
-    cleats.classList.add('fade-in')
-    fall.classList.remove('card-hidden')
-    fall.classList.add('fade-in')
-  }
-  if(y > 2100 && y < 2800){
-    racers.classList.remove('card-hidden')
-    racers.classList.add('fade-in')
-    vermont.classList.remove('card-hidden')
-    vermont.classList.add('fade-in')
-    tnf.classList.remove('card-hidden')
-    tnf.classList.add('fade-in')
-  }
+if (window.innerWidth > 650) {
+  window.addEventListener('scroll', (event) => {
+    let y = window.scrollY
+    if (y > 300 && y < 1000){
+      hoodieszn.classList.remove('card-hidden')
+      hoodieszn.classList.add('fade-in')
+      dance.classList.remove('card-hidden')
+      dance.classList.add('fade-in')
+      hoodfavorite.classList.remove('card-hidden')
+      hoodfavorite.classList.add('fade-in')
+    }
+    if(y > 500 && y < 1200){
+      mbdtf.classList.remove('card-hidden')
+      mbdtf.classList.add('fade-in')
+      heartbreak.classList.remove('card-hidden')
+      heartbreak.classList.add('fade-in')
+      myturn.classList.remove('card-hidden')
+      myturn.classList.add('fade-in')
+    }
+    if(y > 700 && y < 1400){
+      truetomyself.classList.remove('card-hidden')
+      truetomyself.classList.add('fade-in')
+      unluccy.classList.remove('card-hidden')
+      unluccy.classList.add('fade-in')
+      astroworld.classList.remove('card-hidden')
+      astroworld.classList.add('fade-in')
+    }
+    if(y > 1200 && y < 1900){
+      datenight1.classList.remove('card-hidden')
+      datenight1.classList.add('fade-in')
+      house.classList.remove('card-hidden')
+      house.classList.add('fade-in')
+      pc.classList.remove('card-hidden')
+      pc.classList.add('fade-in')
+    }
+    if(y > 1500 && y < 2200){
+      pc3.classList.remove('card-hidden')
+      pc3.classList.add('fade-in')
+      pc2.classList.remove('card-hidden')
+      pc2.classList.add('fade-in')
+      datenight2.classList.remove('card-hidden')
+      datenight2.classList.add('fade-in')
+    }
+    if (y > 1700 && y < 2400){
+      coves.classList.remove('card-hidden')
+      coves.classList.add('fade-in')
+      winter.classList.remove('card-hidden')
+      winter.classList.add('fade-in')
+      jackets.classList.remove('card-hidden')
+      jackets.classList.add('fade-in')
+    }
+    if(y > 2000 && y < 2600){
+      spring.classList.remove('card-hidden')
+      spring.classList.add('fade-in')
+      cleats.classList.remove('card-hidden')
+      cleats.classList.add('fade-in')
+      fall.classList.remove('card-hidden')
+      fall.classList.add('fade-in')
+    }
+    if(y > 2100 && y < 2800){
+      racers.classList.remove('card-hidden')
+      racers.classList.add('fade-in')
+      vermont.classList.remove('card-hidden')
+      vermont.classList.add('fade-in')
+      tnf.classList.remove('card-hidden')
+      tnf.classList.add('fade-in')
+    }
+  })
+} else{
+  hoodieszn.classList.remove('card-hidden')
+  dance.classList.remove('card-hidden')
+  hoodfavorite.classList.remove('card-hidden')
+  mbdtf.classList.remove('card-hidden')
+  heartbreak.classList.remove('card-hidden')
+  myturn.classList.remove('card-hidden')
+  truetomyself.classList.remove('card-hidden')
+  unluccy.classList.remove('card-hidden')
+  astroworld.classList.remove('card-hidden')
 
+  datenight1.classList.remove('card-hidden')
+  house.classList.remove('card-hidden')
+  pc.classList.remove('card-hidden')
+  pc3.classList.remove('card-hidden')
+  pc2.classList.remove('card-hidden')
+  datenight2.classList.remove('card-hidden')
 
-})
+  coves.classList.remove('card-hidden')
+  winter.classList.remove('card-hidden')
+  jackets.classList.remove('card-hidden')
+  spring.classList.remove('card-hidden')
+  cleats.classList.remove('card-hidden')
+  fall.classList.remove('card-hidden')
+  racers.classList.remove('card-hidden')
+  vermont.classList.remove('card-hidden')
+  tnf.classList.remove('card-hidden')
+}
