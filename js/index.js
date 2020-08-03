@@ -19,7 +19,6 @@
   ustaCard = document.getElementById('usta-card')
   window.addEventListener('scroll', (event) => {
     let y = window.scrollY
-    console.log(y)
     if (y > 100 && y < 700){
       yaynayCard.classList.remove('card-hidden')
       yaynayCard.classList.add('slide-left')
