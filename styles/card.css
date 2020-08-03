@@ -1,6 +1,6 @@
 .work-card{
   background-color: white;
-  height: 10em;
+  height: 8em;
   width: 75%;
   border-radius: 15px;
   padding: 1em;
@@ -180,6 +180,12 @@
   }
 }
 
+@media (max-width: 1130px) {
+  .work-card{
+    width: 85%;
+  }
+}
+
 @media (max-width: 1020px){
   .edu-card{
     width: 22em;
@@ -187,8 +193,7 @@
   }
 
   .work-card{
-    width: 85%;
-    height: 13em;
+    height: 10em;
   }
 }
 
@@ -204,11 +209,11 @@
 
   .work-card{
     width: 95%;
-    height: 15em;
+    height: 12em;
   }
 }
 
-@media (max-width: 700px){
+@media (max-width: 705px){
   .edu-card{
     width: 17em;
     height: 8em;
@@ -216,7 +221,7 @@
 
   .work-card{
     width: 80%;
-    height: 21.5em;
+    height: 18em;
   }
 }
 
@@ -230,7 +235,7 @@
 
   .work-card{
     width: 80%;
-    height: 17em;
+    height: 11em;
     align-self: center;
   }
 
