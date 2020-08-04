@@ -249,3 +249,15 @@
   }
 
 }
+
+@media (max-width: 500px){
+  .work-card{
+    height: 13em;
+  }
+}
+
+@media (max-width: 400px){
+  .work-card{
+    height: 16em;
+  }
+}
