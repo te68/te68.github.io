@@ -18,6 +18,8 @@
     stuyCard.classList.remove('card-hidden')
   }
 
+  taCard = document.getElementById('ta-card')
+  dfgCard = document.getElementById('dfg-card')
   yaynayCard = document.getElementById('yaynay-card')
   hopscotchCard = document.getElementById('hopscotch-card')
   ccCard = document.getElementById('creatives-card')
@@ -31,44 +33,53 @@
     window.addEventListener('scroll', (event) => {
       let y = window.scrollY
       if (y > 100 && y < 700){
-        yaynayCard.classList.remove('card-hidden')
-        yaynayCard.classList.add('slide-left')
+        dfgCard.classList.remove('card-hidden')
+        dfgCard.classList.add('slide-left')
       }
       if(y > 250 && y < 850){
-        hopscotchCard.classList.remove('card-hidden')
-        hopscotchCard.classList.add('slide-left')
+        taCard.classList.remove('card-hidden')
+        taCard.classList.add('slide-left')
       }
       if(y > 400 && y < 1000){
         ccCard.classList.remove('card-hidden')
         ccCard.classList.add('slide-left')
       }
       if(y > 550 && y < 1150){
+        yaynayCard.classList.remove('card-hidden')
+        yaynayCard.classList.add('slide-left')
+      }
+      if(y > 700 && y < 1300){
+        hopscotchCard.classList.remove('card-hidden')
+        hopscotchCard.classList.add('slide-left')
+      }
+      if(y > 850 && y < 1450){
         cusailCard.classList.remove('card-hidden')
         cusailCard.classList.add('slide-left')
       }
-      if(y > 700 && y < 1300){
+      if(y > 1000 && y < 1600){
         codingschoolCard.classList.remove('card-hidden')
         codingschoolCard.classList.add('slide-left')
       }
-      if(y > 950 && y < 1550){
+      if(y > 1150 && y < 1750){
         realdealCard.classList.remove('card-hidden')
         realdealCard.classList.add('slide-left')
       }
-      if(y > 1150 && y < 1750){
+      if(y > 1450 && y < 2050){
         ecoCard.classList.remove('card-hidden')
         ecoCard.classList.add('slide-left')
       }
-      if(y > 1300 && y < 1900){
+      if(y > 1600 && y < 2200){
         acquisCard.classList.remove('card-hidden')
         acquisCard.classList.add('slide-left')
       }
-      if(y > 1450 && y < 2050){
+      if(y > 1750 && y < 2350){
         ustaCard.classList.remove('card-hidden')
         ustaCard.classList.add('slide-left')
       }
-
     })
   } else {
+    dfgCard.classList.remove('card-hidden')
+    taCard.classList.remove('card-hidden')
     yaynayCard.classList.remove('card-hidden')
     hopscotchCard.classList.remove('card-hidden')
     ccCard.classList.remove('card-hidden')
