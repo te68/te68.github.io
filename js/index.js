@@ -1,21 +1,21 @@
   const w = window.outerWidth
   cornellCard = document.getElementById('cornell-card')
-  flatironCard = document.getElementById('flatiron-card')
+  // flatironCard = document.getElementById('flatiron-card')
   stuyCard = document.getElementById('stuy-card')
   if (w > 650){
     cornellCard.classList.remove('card-hidden')
     cornellCard.classList.add('slide-left')
-    flatironCard.classList.remove('card-hidden')
-    flatironCard.classList.add('slide-left')
+    // flatironCard.classList.remove('card-hidden')
+    // flatironCard.classList.add('slide-left')
     stuyCard.classList.remove('card-hidden')
     stuyCard.classList.add('slide-left')
   } else {
     cornellCard.classList.remove('slide-left')
-    flatironCard.classList.remove('slide-left')
+    // flatironCard.classList.remove('slide-left')
     stuyCard.classList.remove('slide-left')
     cornellCard.classList.remove('card-hidden')
     flatironCard.classList.remove('card-hidden')
-    stuyCard.classList.remove('card-hidden')
+    // stuyCard.classList.remove('card-hidden')
   }
 
   taCard = document.getElementById('ta-card')
