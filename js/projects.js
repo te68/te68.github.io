@@ -1,3 +1,40 @@
+const wildlifeInfo = document.getElementById("wildlife-info")
+const wildlifeCard = document.getElementById("wildlife-card")
+const wildlifeLink = document.getElementById("wildlife-github-link")
+const wildlifeLink2 = document.getElementById("wildlife-live-link")
+const wildlifeDesc = document.getElementById("wildlife-description")
+wildlifeInfo.addEventListener('mouseover', (event) =>{
+  wildlifeCard.classList.add('blur')
+  wildlifeLink.classList.remove('hidden')
+  wildlifeLink2.classList.remove('hidden')
+  wildlifeDesc.classList.remove('hidden')
+})
+wildlifeInfo.addEventListener('mouseleave', (event) =>{
+  wildlifeCard.classList.remove('blur')
+  wildlifeLink.classList.add('hidden')
+  wildlifeLink2.classList.add('hidden')
+  wildlifeDesc.classList.add('hidden')
+})
+
+
+const ayudaInfo = document.getElementById("ayuda-info")
+const ayudaCard = document.getElementById("ayuda-card")
+const ayudaLink = document.getElementById("ayuda-figma-link")
+const ayudaLink2 = document.getElementById("ayuda-figma-link2")
+const ayudaDesc = document.getElementById("ayuda-description")
+ayudaInfo.addEventListener('mouseover', (event) =>{
+  ayudaCard.classList.add('blur')
+  ayudaLink.classList.remove('hidden')
+  ayudaLink2.classList.remove('hidden')
+  ayudaDesc.classList.remove('hidden')
+})
+ayudaInfo.addEventListener('mouseleave', (event) =>{
+  ayudaCard.classList.remove('blur')
+  ayudaLink.classList.add('hidden')
+  ayudaLink2.classList.add('hidden')
+  ayudaDesc.classList.add('hidden')
+})
+
 const scrabbleInfo = document.getElementById("scrabble-info")
 const scrabbleCard = document.getElementById("scrabble-card")
 const scrabbleLink = document.getElementById("scrabble-github-link")

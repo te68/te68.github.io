@@ -14,10 +14,11 @@
     // flatironCard.classList.remove('slide-left')
     stuyCard.classList.remove('slide-left')
     cornellCard.classList.remove('card-hidden')
-    flatironCard.classList.remove('card-hidden')
-    // stuyCard.classList.remove('card-hidden')
+    // flatironCard.classList.remove('card-hidden')
+    stuyCard.classList.remove('card-hidden')
   }
 
+  jjCard = document.getElementById('j&j-card')
   taCard = document.getElementById('ta-card')
   dfgCard = document.getElementById('dfg-card')
   yaynayCard = document.getElementById('yaynay-card')
@@ -33,51 +34,56 @@
     window.addEventListener('scroll', (event) => {
       let y = window.scrollY
       if (y > 100 && y < 700){
+        jjCard.classList.remove('card-hidden')
+        jjCard.classList.add('slide-left')
+      }
+      if (y > 250 && y < 850){
         dfgCard.classList.remove('card-hidden')
         dfgCard.classList.add('slide-left')
       }
-      if(y > 250 && y < 850){
+      if(y > 400 && y < 1000){
         taCard.classList.remove('card-hidden')
         taCard.classList.add('slide-left')
       }
-      if(y > 400 && y < 1000){
+      if(y > 550 && y < 1150){
         ccCard.classList.remove('card-hidden')
         ccCard.classList.add('slide-left')
       }
-      if(y > 550 && y < 1150){
+      if(y > 700 && y < 1300){
         yaynayCard.classList.remove('card-hidden')
         yaynayCard.classList.add('slide-left')
       }
-      if(y > 700 && y < 1300){
+      if(y > 850 && y < 1450){
         hopscotchCard.classList.remove('card-hidden')
         hopscotchCard.classList.add('slide-left')
       }
-      if(y > 850 && y < 1450){
+      if(y > 1000 && y < 1600){
         cusailCard.classList.remove('card-hidden')
         cusailCard.classList.add('slide-left')
       }
-      if(y > 1000 && y < 1600){
+      if(y > 1150 && y < 1750){
         codingschoolCard.classList.remove('card-hidden')
         codingschoolCard.classList.add('slide-left')
       }
-      if(y > 1150 && y < 1750){
+      if(y > 1450 && y < 2050){
         realdealCard.classList.remove('card-hidden')
         realdealCard.classList.add('slide-left')
       }
-      if(y > 1450 && y < 2050){
+      if(y > 1600 && y < 2200){
         ecoCard.classList.remove('card-hidden')
         ecoCard.classList.add('slide-left')
       }
-      if(y > 1600 && y < 2200){
+      if(y > 1750 && y < 2350){
         acquisCard.classList.remove('card-hidden')
         acquisCard.classList.add('slide-left')
       }
-      if(y > 1750 && y < 2350){
+      if(y > 1900 && y < 2500){
         ustaCard.classList.remove('card-hidden')
         ustaCard.classList.add('slide-left')
       }
     })
   } else {
+    jjCard.classList.remove('card-hidden')
     dfgCard.classList.remove('card-hidden')
     taCard.classList.remove('card-hidden')
     yaynayCard.classList.remove('card-hidden')

@@ -128,7 +128,7 @@
   border-color: black;
   border-radius: .8em;
   padding: .5em;
-  font-size: .9em;
+  font-size: 1em;
   margin-top: 5em;
   margin-bottom: 2em;
 }
@@ -136,7 +136,7 @@
 .project-card-info a{
   text-decoration: none;
   color: black;
-  font-size: 1.3em;
+  font-size: 1em;
   background-color: white;
   border-style: solid;
   border-width: 1px;
@@ -152,6 +152,15 @@
 
 .hidden{
   display: none;
+}
+
+#wildlife-card{
+  background-image: url("../images/wildlife-icon.png");
+}
+
+
+#ayuda-card{
+  background-image: url("../images/ayuda-icon.png");
 }
 
 #scrabble-card{
@@ -199,7 +208,7 @@
 
 @media (max-width: 800px){
   .section-heading{
-    width: 10em;
+    width: 15m;
   }
 
   .edu-card{
