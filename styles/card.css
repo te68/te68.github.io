@@ -158,6 +158,10 @@
   background-image: url("../images/wildlife-icon.png");
 }
 
+#climate-card{
+  background-image: url("../images/climate-icon.jpg");
+}
+
 
 #ayuda-card{
   background-image: url("../images/ayuda-icon.png");
@@ -208,7 +212,7 @@
 
 @media (max-width: 800px){
   .section-heading{
-    width: 15m;
+    width: 15em;
   }
 
   .edu-card{

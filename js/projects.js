@@ -16,6 +16,24 @@ wildlifeInfo.addEventListener('mouseleave', (event) =>{
   wildlifeDesc.classList.add('hidden')
 })
 
+const climateInfo = document.getElementById("climate-info")
+const climateCard = document.getElementById("climate-card")
+const climateLink = document.getElementById("climate-github-link")
+const climateLink2 = document.getElementById("climate-figma-link")
+const climateDesc = document.getElementById("climate-description")
+climateInfo.addEventListener('mouseover', (event) =>{
+  climateCard.classList.add('blur')
+  climateLink.classList.remove('hidden')
+  climateLink2.classList.remove('hidden')
+  climateDesc.classList.remove('hidden')
+})
+climateInfo.addEventListener('mouseleave', (event) =>{
+  climateCard.classList.remove('blur')
+  climateLink.classList.add('hidden')
+  climateLink2.classList.add('hidden')
+  climateDesc.classList.add('hidden')
+})
+
 
 const ayudaInfo = document.getElementById("ayuda-info")
 const ayudaCard = document.getElementById("ayuda-card")
