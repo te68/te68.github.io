@@ -21,19 +21,19 @@
 .work-heading{
   margin-left: 3.6em;
   padding-top: .5em;
-  font-size: 1.3em;
+  font-size: 21px;
 }
 
 .work-sub-heading{
   margin-left: 6em;
-  font-size: .8em;
+  font-size: 13px;
   padding-top: .7em;
   padding-bottom: .7em;
 }
 
 .work-description{
   margin-left: 6em;
-  font-size: .8em;
+  font-size: 13px;
   line-height: 1.6;
 }
 
@@ -64,26 +64,26 @@
 .edu-heading{
   margin-left: 3.6em;
   padding-top: .3em;
-  font-size: 1.3em;
+  font-size: 21px;
 }
 
 .edu-sub-heading{
   margin-left: 6em;
-  font-size: .8em;
+  font-size: 13px;
   padding-top: .5em;
   padding-bottom: .7em;
 }
 
 .edu-description{
   margin-left: 6em;
-  font-size: .8em;
+  font-size: 13px;
   line-height: 1.6;
 }
 
 .project-title{
   text-align: center;
   text-shadow: .5px .5px 1px grey;
-  font-size: 1.5em;
+  font-size: 25px;
   font-weight: 400;
 }
 
@@ -128,7 +128,7 @@
   border-color: black;
   border-radius: .8em;
   padding: .5em;
-  font-size: 1em;
+  font-size: 15px;
   margin-top: 5em;
   margin-bottom: 2em;
 }
@@ -136,7 +136,7 @@
 .project-card-info a{
   text-decoration: none;
   color: black;
-  font-size: 1em;
+  font-size: 18px;
   background-color: white;
   border-style: solid;
   border-width: 1px;
@@ -155,36 +155,36 @@
 }
 
 #wildlife-card{
-  background-image: url("../images/wildlife-icon.png");
+  background-image: url("../images/projects/wildlife-icon.png");
 }
 
 #climate-card{
-  background-image: url("../images/climate-icon.jpg");
+  background-image: url("../images/projects/climate-icon.jpg");
 }
 
 
 #ayuda-card{
-  background-image: url("../images/ayuda-icon.png");
+  background-image: url("../images/projects/ayuda-icon.png");
 }
 
 #scrabble-card{
-  background-image: url("../images/scrabble-icon.png");
+  background-image: url("../images/projects/scrabble-icon.png");
 }
 
 #gif-card{
-  background-image: url("../images/giphy-logo.png");
+  background-image: url("../images/projects/giphy-logo.png");
 }
 
 #wine-card{
-  background-image: url("../images/wine-icon.png");
+  background-image: url("../images/projects/wine-icon.png");
 }
 
 #cusail-card{
-  background-image: url("../images/cusail-big.png");
+  background-image: url("../images/projects/cusail-big.png");
 }
 
 #cc-card{
-  background-image: url("../images/cc-logo-big.png");
+  background-image: url("../images/projects/cc-logo-big.png");
 }
 
 @media (max-width: 1200px){

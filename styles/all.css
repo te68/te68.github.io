@@ -1,7 +1,6 @@
 body{
   background-color: #edecec;
-  /* font-family: PTSansPro; */
-  font-family: Raleway;
+  font-family: sans-serif, Helvetica;
   margin: 0em;
 }
 
@@ -34,7 +33,7 @@ nav a{
   color: black;
   font-weight: 400;
   padding: .5em;
-  font-size: 1.5em;
+  font-size: 25px;
   text-shadow: .5px .5px 1px grey;
 }
 
@@ -42,7 +41,7 @@ nav a{
   text-shadow: .5px .5px 1px grey;
   white-space: nowrap;
   margin: 0em;
-  font-size: 1.5em;
+  font-size: 25px;
   font-weight: 400;
   padding-bottom: 1em;
 }
@@ -53,9 +52,6 @@ section{
   left: 28em;
 }
 
-#mobile-projects-description{
-  display: none;
-}
 
 @media (max-width: 1200px){
   section{
@@ -100,17 +96,6 @@ section{
   .section-heading{
     align-self: center;
     text-align: center;
-  }
-
-  #mobile-projects-description{
-    display: block;
-    align-self: center;
-    text-shadow: .5px .5px 1px grey;
-    white-space: nowrap;
-    margin: 0em;
-    padding: 0em;
-    font-size: 1em;
-    font-weight: 400;
   }
 
 

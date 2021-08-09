@@ -1,0 +1,179 @@
+#mobile-projects-description{
+  display: none;
+}
+
+.project-page{
+  text-shadow: .5px .5px 1px grey;
+  white-space: nowrap;
+  margin: 0em;
+  font-size: 2.5em;
+  font-weight: 600;
+  padding-bottom: 0em;
+}
+
+.icon-heading-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-heading-container img{
+  width: 53px;
+}
+
+.project-page-link-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-page-link-container a{
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  background-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: .8em;
+  padding: 8px 16px;
+  margin-top: 10px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+table{
+  border: 3px solid black;
+  border-bottom: 0px;
+  border-spacing: 0px;
+}
+
+table td{
+  padding: 10px;
+  border-bottom: 3px solid black;
+}
+
+.project-detail-image{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project-photo-container{
+  text-align: center;
+}
+
+.persona{
+  width: 75%;
+}
+
+#ideation-graph{
+  width: 75%;
+}
+
+#testing-text{
+  margin-bottom: 15px;
+}
+
+#ayuda-wireframe{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ayuda-prototype-container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#ayuda-prototype-container img{
+  width: 30%;
+}
+
+#wildlife-icon{
+  margin-left: 10px;
+}
+
+.wildlife-sketch-container{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wildlife-sketch{
+  width: 40%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid black;
+}
+
+@media (max-width: 800px){
+  .wildlife-sketch-container{
+    flex-direction: column;
+  }
+
+  .wildlife-sketch{
+    width: 80%;
+  }
+
+  .arrow{
+    transform: rotate(90deg);
+    margin-top: 50px;
+    margin-bottom:50px;
+  }
+
+  .wireframe-heading{
+    text-align: center;
+  }
+
+  .persona{
+    width: 95%;
+  }
+}
+
+
+@media (max-width: 650px){
+
+  #mobile-projects-description{
+    display: block;
+    align-self: center;
+    text-shadow: .5px .5px 1px grey;
+    white-space: nowrap;
+    margin: 0em;
+    padding: 0em;
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  .icon-heading-container{
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .project-detail-section{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wireframe-heading{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .wildlife-sketch-container{
+    margin-top: 0px;
+  }
+
+  #photo-detail{
+    margin-top: 50px;
+  }
+
+}
