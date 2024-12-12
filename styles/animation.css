@@ -1,11 +1,11 @@
-.card-hidden{
+/* .card-hidden{
   visibility: hidden;
 }
 
 .slide-left{
   animation: slideLeft ease-in;
   animation-duration: .6s;
-}
+} */
 
 @keyframes slideLeft{
   0%{

@@ -1,3 +1,18 @@
+const chefInfo = document.getElementById("chef-info")
+const chefCard = document.getElementById("chef-card")
+const chefDetailLink = document.getElementById("chef-detail-link")
+const chefDesc = document.getElementById("chef-description")
+chefInfo.addEventListener('mouseover', (event) =>{
+  chefCard.classList.add('blur')
+  chefDetailLink.classList.remove('hidden')
+  chefDesc.classList.remove('hidden')
+})
+chefInfo.addEventListener('mouseleave', (event) =>{
+  chefCard.classList.remove('blur')
+  chefDetailLink.classList.add('hidden')
+  chefDesc.classList.add('hidden')
+})
+
 const wildlifeInfo = document.getElementById("wildlife-info")
 const wildlifeCard = document.getElementById("wildlife-card")
 const wildlifeDetailLink = document.getElementById("wildlife-detail-link")
@@ -66,35 +81,35 @@ scrabbleInfo.addEventListener('mouseleave', (event) =>{
   scrabbleDesc.classList.add('hidden')
 })
 
-const gifInfo = document.getElementById("gif-info")
-const gifCard = document.getElementById("gif-card")
-const gifLink = document.getElementById("gif-github-link")
-const gifDesc = document.getElementById("gif-description")
-gifInfo.addEventListener('mouseover', (event) =>{
-  gifCard.classList.add('blur')
-  gifLink.classList.remove('hidden')
-  gifDesc.classList.remove('hidden')
-})
-gifInfo.addEventListener('mouseleave', (event) =>{
-  gifCard.classList.remove('blur')
-  gifLink.classList.add('hidden')
-  gifDesc.classList.add('hidden')
-})
+// const gifInfo = document.getElementById("gif-info")
+// const gifCard = document.getElementById("gif-card")
+// const gifLink = document.getElementById("gif-github-link")
+// const gifDesc = document.getElementById("gif-description")
+// gifInfo.addEventListener('mouseover', (event) =>{
+//   gifCard.classList.add('blur')
+//   gifLink.classList.remove('hidden')
+//   gifDesc.classList.remove('hidden')
+// })
+// gifInfo.addEventListener('mouseleave', (event) =>{
+//   gifCard.classList.remove('blur')
+//   gifLink.classList.add('hidden')
+//   gifDesc.classList.add('hidden')
+// })
 
-const wineInfo = document.getElementById("wine-info")
-const wineCard = document.getElementById("wine-card")
-const wineLink = document.getElementById("wine-github-link")
-const wineDesc = document.getElementById("wine-description")
-wineInfo.addEventListener('mouseover', (event) =>{
-  wineCard.classList.add('blur')
-  wineLink.classList.remove('hidden')
-  wineDesc.classList.remove('hidden')
-})
-wineInfo.addEventListener('mouseleave', (event) =>{
-  wineCard.classList.remove('blur')
-  wineLink.classList.add('hidden')
-  wineDesc.classList.add('hidden')
-})
+// const wineInfo = document.getElementById("wine-info")
+// const wineCard = document.getElementById("wine-card")
+// const wineLink = document.getElementById("wine-github-link")
+// const wineDesc = document.getElementById("wine-description")
+// wineInfo.addEventListener('mouseover', (event) =>{
+//   wineCard.classList.add('blur')
+//   wineLink.classList.remove('hidden')
+//   wineDesc.classList.remove('hidden')
+// })
+// wineInfo.addEventListener('mouseleave', (event) =>{
+//   wineCard.classList.remove('blur')
+//   wineLink.classList.add('hidden')
+//   wineDesc.classList.add('hidden')
+// })
 
 const cusailInfo = document.getElementById("cusail-info")
 const cusailCard = document.getElementById("cusail-card")

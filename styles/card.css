@@ -1,6 +1,6 @@
 .work-card{
   background-color: white;
-  height: 8em;
+  /* height: 8em; */
   width: 75%;
   border-radius: 15px;
   padding: 1em;
@@ -154,6 +154,10 @@
   display: none;
 }
 
+#chef-card{
+  background-image: url("../images/projects/chef-icon.png");
+}
+
 #wildlife-card{
   background-image: url("../images/projects/wildlife-icon.png");
 }
@@ -202,11 +206,11 @@
 @media (max-width: 1020px){
   .edu-card{
     width: 22em;
-    height: 6em;
+    /* height: 6em; */
   }
 
   .work-card{
-    height: 10em;
+    /* height: 10em; */
   }
 }
 
@@ -217,12 +221,12 @@
 
   .edu-card{
     width: 20em;
-    height: 7em;
+    /* height: 7em; */
   }
 
   .work-card{
     width: 95%;
-    height: 12em;
+    /* height: 15em; */
   }
 }
 
@@ -234,7 +238,7 @@
 
   .work-card{
     width: 80%;
-    height: 18em;
+    /* height: 20em; */
   }
 }
 
@@ -242,13 +246,13 @@
 
   .edu-card{
     width: 70%;
-    height: 8em;
+    /* height: 8em; */
     align-self: center;
   }
 
   .work-card{
     width: 80%;
-    height: 11em;
+    /* height: 11em; */
     align-self: center;
   }
 
@@ -265,12 +269,12 @@
 
 @media (max-width: 500px){
   .work-card{
-    height: 13em;
+    /* height: 13em; */
   }
 }
 
 @media (max-width: 400px){
   .work-card{
-    height: 16em;
+    /* height: 16em; */
   }
 }
