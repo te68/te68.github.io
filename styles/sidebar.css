@@ -8,10 +8,11 @@
 #side-bar{
   background-color: #dedede;
   width: 380px;
-  height: 100em;
+  height: 100%;
   position: fixed;
   /* float: left; */
   text-align: center;
+  padding-bottom: 12px;
 }
 
 #side-bar span{
@@ -88,7 +89,7 @@
     margin: 0em;
     margin-bottom: 1em;
     width: 100%;
-    height: 35em;
+    /* height: 35em; */
     position: static;
   }
 
@@ -96,6 +97,6 @@
 
 @media (max-width: 550px){
   #side-bar{
-    height: 30em;
+    /* height: 30em; */
   }
 }

@@ -44,7 +44,7 @@
 .edu-card{
   width: 50%;
   background-color: white;
-  height: 5em;
+  /* height: 5em; */
   border-radius: 15px;
   padding: 1em;
   margin-bottom: 2em;
@@ -233,7 +233,7 @@
 @media (max-width: 705px){
   .edu-card{
     width: 17em;
-    height: 8em;
+    /* height: 8em; */
   }
 
   .work-card{
